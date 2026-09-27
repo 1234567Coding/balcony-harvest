@@ -12,6 +12,7 @@
   <link rel="canonical" href="https://thebalconyharvest.pages.dev/articles/grow-tomatoes-in-pots.html">
   <meta property="og:url" content="https://thebalconyharvest.pages.dev/articles/grow-tomatoes-in-pots.html">
   <link rel="stylesheet" href="../styles.css">
+  <script>(function(){try{var t=localStorage.getItem('bh-theme');if(!t)t=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';if(t==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -22,6 +23,16 @@
         <svg width="32" height="32" viewBox="0 0 32 32" role="img" aria-label="Leaf logo for The Balcony Harvest"><path d="M16 3C9 8 6 15 6 22c0 1 .1 2 .3 3 1-.2 2-.3 3-.3 7 0 14-3 14.7-15.7C17 9 16 6 16 3z" fill="#2e7d32"/><path d="M10 24c3-6 7-10 13-12" stroke="#1f5c24" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>
         <span class="brand-name">The <span>Balcony</span> Harvest</span>
       </a>
+            <form class="site-search" id="site-search" role="search">
+        <label class="visually-hidden" for="site-search-input">Search guides</label>
+        <input type="search" id="site-search-input" placeholder="Search guides&hellip;" autocomplete="off"
+               aria-expanded="false" aria-controls="site-search-results" aria-autocomplete="list" role="combobox">
+        <ul class="search-results" id="site-search-results" role="listbox" aria-label="Search results" hidden></ul>
+      </form>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle dark mode">
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M14.5 10.5A6.5 6.5 0 0 1 7.5 3.5a6.5 6.5 0 1 0 7 7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="3.4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9 1.5v2M9 14.5v2M1.5 9h2M14.5 9h2M3.7 3.7l1.4 1.4M12.9 12.9l1.4 1.4M14.3 3.7l-1.4 1.4M5.1 12.9l-1.4 1.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
       <button class="nav-toggle" aria-expanded="false" aria-controls="mainnav" onclick="var n=document.getElementById('mainnav'),b=this;b.classList.toggle('open');n.classList.toggle('open');b.setAttribute('aria-expanded',n.classList.contains('open'))">
         <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 4h14M2 9h14M2 14h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
         Menu
@@ -153,5 +164,6 @@
       <p class="footer-small">© 2026 The Balcony Harvest. Some links on this site are affiliate links — <a href="../disclosure.html">learn more</a>.</p>
     </div>
   </footer>
+  <script src="../assets/site.js" defer></script>
 </body>
 </html>
